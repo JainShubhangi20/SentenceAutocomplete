@@ -27,10 +27,11 @@ Given an incomplete sentence, the system generates 3 meaningful autocomplete sug
 pip install requirements.txt
 '''
 
-### 2. Run the script
+### 2. Run the python notebook from start to bottom or run the python script 
 '''bash
 python autocomplete.py
 '''
+
 
 ### 3. Provide input (Example input)
 '''
