@@ -1,5 +1,5 @@
 
-# Sentence Autocomplete using GPT-Neo
+# Sentence Autocomplete
 
 This project implements a sentence autocompletion system similar to Gmail Smart Compose.
 Given an incomplete sentence, the system generates 3 meaningful autocomplete suggestions.
