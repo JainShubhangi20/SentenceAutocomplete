@@ -65,14 +65,19 @@ Enter a partial sentence: AI can help improve
 
 ### Assumptions
 - CPU-only execution is sufficient for inference
-- End-of-sentence token (.) is a reliable stopping criterion
+- End-of-sentence token (.) is a reliable stopping criterion, with max_new_tokens set to 40
 - Top-K sampling with temperature provides adequate variation
 
 ### Improvement Ideas
-- Add latency benchmarking and optimization
-- Introduce dynamic temperature or Top-K tuning
-- Extend to batch inference or API deployment (FastAPI)
+- Dynamic decoding parameters: Adjust Top-K and temperature based on prompt length or context to balance fluency and diversity more effectively.
+- Latency optimization: Measure and optimize inference time, and introduce batching or model quantization for faster responses.
+- Evaluation enhancement: Extend evaluation beyond perplexity and diversity by incorporating human feedback or acceptance-rate–based metrics.
+- Structured logging: Store logs in JSON format with run IDs and timestamps to enable easier analysis and experiment tracking.
+- API deployment: Expose the autocomplete functionality via a REST API (e.g., FastAPI) for easier integration into applications.
+- Fallback strategy: Introduce a fallback model or decoding configuration when generation quality degrades or confidence is low.
+- Scalability: Add support for batch processing and asynchronous requests to handle higher throughput in production.
 
+  
 ---
 
 **Final Model Selected:** GPT-Neo  
